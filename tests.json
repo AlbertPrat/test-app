@@ -1,0 +1,17 @@
+[
+  {
+    "nom": "Test de cultura general",
+    "preguntes": [
+      {
+        "text": "Quin és el riu més llarg del món?",
+        "opcions": ["Amazonas", "Nil", "Danubi", "Mississippi"],
+        "correcta": 1
+      },
+      {
+        "text": "Qui va pintar la Mona Lisa?",
+        "opcions": ["Van Gogh", "Picasso", "Da Vinci", "Rembrandt"],
+        "correcta": 2
+      }
+    ]
+  }
+]
