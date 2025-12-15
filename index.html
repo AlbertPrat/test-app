@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test d'Exàmens</title>
+    <title>Test</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Test d'Exàmens</h1>
-    <div id="quiz-container">
-        <button onclick="carregarTest()">Començar Test</button>
-        <div id="pregunta"></div>
-        <div id="opcions"></div>
-        <button id="següent" style="display:none;" onclick="següentPregunta()">Següent</button>
+    <div id="inici-container">
+        <h1>Test PAMO</h1>
+        <label for="tema">Escull un tema:</label>
+        <select id="tema">
+            <option value="" disabled selected>Selecciona un tema</option>
+        </select>
+         <label for="numPreguntes">Nombre de preguntes:</label>
+        <input type="number" id="numPreguntes" value="15" min="1" max="100">
+        <button onclick="començarTest()">Començar Test</button>
     </div>
+    
+    <div id="quiz-container" style="display: none;">
+        <div id="progres-container" style="margin:10px 0;">
+    <div id="progres-text" style="font-weight:bold; margin-bottom:5px;"></div>
+    <div style="background:#eee; border-radius:5px; height:20px; width:100%;">
+      <div id="progres-bar"></div>
+    </div>
+  </div>
+        <h2 id="pregunta"></h2>
+        <div id="opcions"></div>
+        <button id="següent" style="display: none;" onclick="següentPregunta()">Següent</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
