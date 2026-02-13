@@ -8,7 +8,7 @@ const spreadsheetId = "1JlkoAelfAG8ohE8mnr9d0-_ZIe3V_x_EzSo0MY4pJJM"; // l’ID 
 const apiKey = "AIzaSyCZOjFQuOh9V2jXK6DjJfWmtYCfLYtiOys";
 
 const rangeTemes = "Temes!A1:C100";      // Full amb els temes
-const rangePreguntes = "Preguntes!A1:G500"; // Full amb les preguntes
+const rangePreguntes = "Preguntes!A1:G5000"; // Full amb les preguntes
 
 
 // 🔹 Carregar els tests
@@ -241,3 +241,4 @@ function reiniciarTest() {
 
 // 🔹 Carreguem els temes quan la pàgina es carrega
 window.onload = carregarTemes;
+
